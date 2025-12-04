@@ -1,0 +1,13 @@
+// Daniele's tasks configuration.
+//
+
+[
+  {
+    "label": "Build & Run",
+    "command": "sh ~/.config/zed/custom_runfile.sh",
+    "description": "Compiles and runs the current code file",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  }
+]

@@ -1,0 +1,34 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "cmd-g": "git_panel::ToggleFocus",
+      //"cmd-e": "pane::RevealInProjectPanel",
+      "cmd-e": "project_panel::ToggleFocus",
+      "cmd-b": "workspace::ToggleLeftDock",
+      //"cmd-t": "workspace::ToggleBottomDock",
+      "cmd-r": ["task::Spawn", { "task_name": "C++/Raylib" }],
+      "cmd-d": "diagnostics::Deploy",
+      "cmd-ctrl-left": "workspace::ActivatePaneLeft",
+      "cmd-ctrl-right": "workspace::ActivatePaneRight",
+      "cmd-ctrl-up": "workspace::ActivatePaneUp",
+      "cmd-ctrl-down": "workspace::ActivatePaneDown",
+      "cmd-/": "pane::SplitRight",
+      "cmd-[": "editor::Outdent",
+      "cmd-]": "editor::Indent"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "space": "project_panel::Rename",
+      "enter": "project_panel::Open"
+    }
+  }
+]
